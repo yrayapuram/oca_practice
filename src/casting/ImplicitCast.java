@@ -8,8 +8,9 @@ public class ImplicitCast {
         short height = 2;
         //Implicit cast converts short to int(numeric promotion) when arithmetic operation applied.
         //Compiler thinks possible overflow hence compile error.
-        //Fix: int area = base * height;
-        short area = base * height;
+        //Compile Error:
+        // short area = base * height;
+        short area = (short) (base * height);
         System.out.println("Area : " + base * height);
 
     }
