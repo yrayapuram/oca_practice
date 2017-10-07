@@ -32,8 +32,8 @@ public class SmallToBigDataType {
 
         //Example 3
 
-        double doubleBase = 4.0;
-        float floatHeight = 5.0f; //without f literal is treated double.
+        double doubleBase = 4.5;
+        float floatHeight = 5.2f; //without f literal is treated double.
 
         //Because of numeric promotion, the resulting value
         //in the below arithmetic binary operation becomes double.
