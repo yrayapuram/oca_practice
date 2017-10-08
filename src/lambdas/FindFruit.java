@@ -25,7 +25,7 @@ public class FindFruit {
         //Prints Banana Mango
         findFruit(fruits, fruit -> fruit.isSweet());
 
-        //Prints Banana Mango
+        //Prints Banana Orange Mango
         findFruit(fruits, fruit -> fruit.isGoodForHealth());
 
         //Prints all fruit names with prefix I love
