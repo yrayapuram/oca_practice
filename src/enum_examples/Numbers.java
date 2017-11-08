@@ -2,14 +2,14 @@ package enum_examples;
 
 public class Numbers {
 
-    enum Counters { ONE, TWO, THREE }
+    enum Counter { ONE, TWO, THREE }
 
     public static void main(String... args) {
 
         String num = "ONE";
 
         //Prints: 1
-        switch (Counters.valueOf(num)) {
+        switch (Counter.valueOf(num)) {
 
             case ONE:
                 System.out.println("1");
@@ -23,5 +23,9 @@ public class Numbers {
             default:
                 System.out.println("Some number");
         }
+
+        //Prints: ONE TWO THREE
+        for(Counter n : Counter.values())
+            System.out.print(n + " ");
     }
 }
