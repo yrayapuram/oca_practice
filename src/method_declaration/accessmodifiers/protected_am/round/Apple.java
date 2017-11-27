@@ -1,6 +1,6 @@
-package accessmodifiers.protected_am.round;
+package method_declaration.accessmodifiers.protected_am.round;
 
-import accessmodifiers.protected_am.fruit.Fruit;
+import method_declaration.accessmodifiers.protected_am.fruit.Fruit;
 
 public class Apple extends Fruit {
 
@@ -20,6 +20,11 @@ public class Apple extends Fruit {
         //throws compile error.
 
         //fruit.whatShape();
+
+        //prints: Round
+        //since Apple is subclass of Fruit, apple object has
+        //access to protected members of Fruit class.
+        apple.whatShape();
 
         //Access to public member method allowed and Prints Red.
         fruit.whatColor("Red");

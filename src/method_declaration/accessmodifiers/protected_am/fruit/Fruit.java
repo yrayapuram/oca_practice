@@ -1,4 +1,4 @@
-package accessmodifiers.protected_am.fruit;
+package method_declaration.accessmodifiers.protected_am.fruit;
 
 public class Fruit {
 
