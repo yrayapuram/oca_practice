@@ -22,4 +22,15 @@ public class Reverse {
 
         return 10 * powerOfTen(someIntegerValue / 10);
     }
+
+    public static String reverseByWords(String someSentence) {
+        if (!someSentence.contains(" "))
+            return someSentence;
+
+        String[] words = someSentence.split(" ");
+
+        return words[words.length - 1] + " "
+                + reverseByWords(someSentence.substring(0, someSentence.indexOf(words[words.length - 1])));
+    }
+
 }

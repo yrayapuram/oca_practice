@@ -8,6 +8,9 @@ public class TestReverse {
 
         int someInt = 123;
         System.out.println("Integer reversed :- " + Reverse.reverse(someInt));
+
+        String sentence = "Hello Good Morning";
+        System.out.println("The Reversed String is : " + Reverse.reverseByWords(sentence));
     }
 
 }
