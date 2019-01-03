@@ -2,10 +2,11 @@ package recursion;
 
 public class Factorial {
 
-    public static int factorialFunc(int fact) {
-        if (fact <= 1) {
-            return fact;
-        }
-        return (factorialFunc(fact - 1) * fact);
+    public static int factorial(int someIntegerValue) {
+
+        if (someIntegerValue <= 1)
+            return someIntegerValue;
+
+        return factorial(someIntegerValue - 1) * someIntegerValue;
     }
 }
