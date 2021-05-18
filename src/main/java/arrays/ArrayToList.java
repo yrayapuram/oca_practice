@@ -24,5 +24,7 @@ public class ArrayToList {
         //prints [You, Someone]
         System.out.println(Arrays.toString(names));
 
+        //namesList.add("Anyone"); // UnsupportedOperationException
+
     }
 }
