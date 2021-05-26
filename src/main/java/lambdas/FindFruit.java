@@ -8,13 +8,13 @@ public class FindFruit {
     private static void findFruit(List<Fruit> fruits, TasteFruit tasteFruit) {
         for(Fruit f: fruits) {
             if(tasteFruit.findAboutFruit(f))
-                System.out.println(f + " ");
+                System.out.println(f);
         }
     }
 
     public static void main(String... args) {
 
-        List<Fruit> fruits = new ArrayList();
+        List<Fruit> fruits = new ArrayList<>();
 
         fruits.add(new Fruit("Banana", true, true));
 
