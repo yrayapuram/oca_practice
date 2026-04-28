@@ -21,5 +21,12 @@ public class StringFromStringPool {
         System.out.println(Integer.toHexString(strFeature2.hashCode()));
         System.out.println(Integer.toHexString(strFeature3.hashCode()));
 
+        //Any operation to modify a string results in a new String object.
+        //Below concat operation is not going to update original string.
+        strFeature1.concat(" added string value");
+        System.out.println(strFeature1);
+        //New String object is created with concatenated string value.
+        String strFeature4 = strFeature1.concat(" added string value");
+        System.out.println(strFeature4);
     }
 }
